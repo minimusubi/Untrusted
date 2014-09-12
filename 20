@@ -1,0 +1,15 @@
+map.defineObject('bullet2', {
+        'type': 'dynamic',
+        'symbol': '*',
+        'color': 'blue',
+        'interval': 100,
+        'projectile': true,
+        'behavior': function (me) {
+            me.move('up');
+        }
+    });
+      
+    Math.random = function() {
+        for (var i = 0; i < map.getWidth() - 1; i++)
+            map.placeObject(i, 15, 'bullet2');
+    }
