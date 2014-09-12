@@ -1,0 +1,9 @@
+map.defineObject('block2', {
+          'symbol': 'X',
+          'color': 'red',
+          'impassable': true
+      });    
+      
+      for (i = 20; i< 30; i++) {
+          map.placeObject(i, fl(h/2), 'block2');
+      }
