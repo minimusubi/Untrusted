@@ -1,0 +1,8 @@
+if (t1.getType() == 'teleporter' && t2.getType() == "teleporter") {
+            canvas.beginPath();
+            canvas.strokeStyle = "white";
+            canvas.lineWidth = 2;
+            canvas.moveTo(map.getCanvasCoords(t1).x, map.getCanvasCoords(t1).y);
+            canvas.lineTo(map.getCanvasCoords(t2).x, map.getCanvasCoords(t2).y);
+            canvas.stroke();
+        }
